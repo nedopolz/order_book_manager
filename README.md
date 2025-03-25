@@ -1,6 +1,7 @@
 # order book manager
 
 ### Data structure selection
+- firstly I consider [this](https://github.com/kmanley/orderbook/blob/master/orderbook.py) implementation, by winner of LOB creation contest(literally), but it is overkill because binance handles almost all hard tasks for me.
 - after api research we need to maintain to dicts, one for bids, one for asks
 - in general the most efficient data structure to hold key(price) - value(supply) structure is hashmap aka dict
 - we can use just dict because main focus is update speed, but sorting will make fast calculations on spread, so it seems a like cheating to use just dict :)
